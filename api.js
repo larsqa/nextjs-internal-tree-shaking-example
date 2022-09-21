@@ -1,3 +1,6 @@
+// ========================================================
+// FOLLOWING EXAMPLE: serverApi is not exposed client side
+// ========================================================
 // export const serverApi = () => {
 //   console.log("I should only be available server side.");
 // };
@@ -6,9 +9,11 @@
 //   console.log("I should only be available client side.");
 // };
 
-// ========================================================
-// ========================================================
 
+
+// ========================================================
+// FOLLOWING EXAMPLE: serverApi is exposed client side
+// ========================================================
 // import axios from "axios";
 
 // export const serverApi = axios.create({
@@ -21,9 +26,11 @@
 //   baseURL: "/api",
 // });
 
-// ========================================================
-// ========================================================
 
+
+// ========================================================
+// FOLLOWING EXAMPLE: serverApi is exposed client side
+// ========================================================
 const createApi = (message) => {
   console.log(message);
   return () =>{}
